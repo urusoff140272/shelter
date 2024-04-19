@@ -1,23 +1,66 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
-* {
+@font-face {
+  font-family: "Georgia";
+  src: url("../fonts/Georgia.eot");
+  src: local("../fonts/Georgia"), url("../fonts/Georgia.eot?#iefix") format("embedded-opentype"), url("../fonts/Georgia.woff") format("woff"), url("../fonts/Georgia.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Georgia";
+  src: url("../fonts/Georgia-Italic.eot");
+  src: local("../fonts/Georgia Italic"), local("Georgia-Italic"), url("../fonts/Georgia-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/Georgia-Italic.woff") format("woff"), url("../fonts/Georgia-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Georgia";
+  src: url("../fonts/Georgia-Bold.eot");
+  src: local("../fonts/Georgia Bold"), local("Georgia-Bold"), url("../fonts/Georgia-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Georgia-Bold.woff") format("woff"), url("../fonts/Georgia-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Georgia";
+  src: url("../fonts/Georgia-BoldItalic.eot");
+  src: local("../fonts/Georgia Bold Italic"), local("Georgia-BoldItalic"), url("../fonts/Georgia-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Georgia-BoldItalic.woff") format("woff"), url("../fonts/Georgia-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Arial";
+  src: url("../fonts/ArialRegular/ArialRegular.eot");
+  src: url("../fonts/ArialRegular/ArialRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/ArialRegular/ArialRegular.woff") format("woff"), url("../fonts/ArialRegular/ArialRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Arial";
+  src: url("../fonts/ArialItalic/ArialItalic.eot");
+  src: url("../fonts/ArialItalic/ArialItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/ArialItalic/ArialItalic.woff") format("woff"), url("../fonts/ArialItalic/ArialItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+*,
+*:before,
+*:after {
   padding: 0;
   margin: 0;
   border: 0;
-}
-
-*, *:before, *:after {
   box-sizing: border-box;
 }
 
-:focus, :active {
+:focus,
+:active {
   outline: none;
 }
 
-a:focus, a:active {
+a:focus,
+a:active {
   outline: none;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
   -ms-text-size-adjust: 100%;
@@ -25,7 +68,9 @@ html, body {
   -webkit-text-size-adjust: 100%;
 }
 
-input, button, textarea {
+input,
+button,
+textarea {
   font-family: inherit;
 }
 
@@ -35,6 +80,11 @@ input::-ms-clear {
 
 button {
   cursor: pointer;
+  font-weight: inherit;
+  font-size: inherit;
+  border-color: inherit;
+  color: inherit;
+  background-color: inherit;
 }
 
 button::-moz-focus-inner {
@@ -42,7 +92,8 @@ button::-moz-focus-inner {
   border: 0;
 }
 
-a, a:visited {
+a,
+a:visited {
   text-decoration: none;
 }
 
@@ -50,7 +101,9 @@ a:hover {
   text-decoration: none;
 }
 
-ul li {
+ul,
+li,
+ol {
   list-style: none;
 }
 
@@ -58,8 +111,18 @@ img {
   vertical-align: top;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-size: inherit;
+  font-weight: inherit;
+}
+
+a {
+  color: inherit;
 }
 
 html {
@@ -67,16 +130,285 @@ html {
 }
 
 body {
-  background-color: rgb(127, 127, 193);
-  font-family: "Montserrat", Verdana, sans-serif;
+  background-color: #2c35e0;
+  font-family: "Georgia", serif;
+  color: #545454;
+  font-weight: 400;
 }
 
 .wrapper {
   min-height: 100%;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .container {
-  max-width: 1046px;
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: content-box;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+._ibg {
+  position: relative;
+}
+._ibg img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+h2 {
+  font-size: 35px;
+  line-height: 1.3;
+  letter-spacing: 0.06em;
+  color: #545454;
+  max-width: 370px;
+}
+
+h3 {
+  font-size: 20px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: #545454;
+}
+
+.button {
+  font-size: 17px;
+  line-height: 1.3;
+  letter-spacing: 0.06em;
+  color: #292929;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  min-height: 52px;
+  padding: 5px 45px;
+}
+
+.main-friends__navigation {
+  position: static;
+  width: 52px;
+  height: 52px;
+  background-image: url(../../img/friends/arrows/arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 100px;
+  border: 2px solid #f1cdb3;
+  transition: 0.3s;
+}
+.main-friends__navigation::after {
+  display: none;
+}
+.main-friends__navigation:hover {
+  background-color: #fddcc4;
+  border: 2px solid #fddcc4;
+}
+
+.header {
+  padding: 30px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.header__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  text-align: center;
+}
+
+.header__logo-title {
+  color: #f1cdb3;
+  font-size: 32px;
+  line-height: 1.1;
+  letter-spacing: 0.06em;
+  margin-bottom: 10px;
+}
+
+.header__logo-subtitle {
+  font-family: "Arial";
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  color: #fff;
+}
+
+.menu-header__list {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.menu-header__item {
+  font-family: "Arial";
+  font-size: 15px;
+  line-height: 1.6;
+  color: #cdcdcd;
+}
+.menu-header__item ::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background-color: #f1cdb3;
+  transition: 0.3s;
+}
+.menu-header__item :hover::after {
+  width: 100%;
+}
+
+.menu-header__item_accent ::after {
+  width: 100%;
+}
+
+.main__only {
+  padding-top: 180px;
+}
+
+.only-main {
+  background-image: url(../../img/only/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.only-main__body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.only-main__content {
+  margin-top: 164px;
+}
+
+.only-main__title {
+  font-size: 44px;
+  line-height: 1.3;
+  color: #fff;
+  max-width: 310px;
+  margin-bottom: 41px;
+}
+
+.only-main__text {
+  font-family: "Arial";
+  font-size: 15px;
+  line-height: 1.6;
+  color: #cdcdcd;
+  max-width: 460px;
+  margin-bottom: 42px;
+}
+
+.only-main__button {
+  background-color: #f1cdb3;
+  margin-bottom: 243px;
+  transition: 0.3s;
+}
+.only-main__button:hover {
+  background-color: #fddcc4;
+}
+
+.main__about {
+  padding: 80px 0 100px;
+}
+
+.about-main {
+  background-color: #fff;
+}
+
+.about-main__body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 120px;
+}
+
+.about-main__content {
+  max-width: 430px;
+}
+.about-main__content :not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.about-main__text {
+  font-family: "Arial";
+  font-size: 15px;
+  line-height: 1.6;
+  color: #4c4c4c;
+}
+
+.main__friends {
+  padding: 80px 0 100px;
+}
+
+.main-friends {
+  background-color: #f6f6f6;
+}
+
+.main-friends__body {
+  position: relative;
+  text-align: center;
+}
+
+.main-friends__title {
+  max-width: 400px;
+  margin: 0 auto 60px;
+  text-align: center;
+}
+
+.main-friends__slider {
+  max-width: 990px;
+  margin-bottom: 60px;
+}
+
+.item-friends {
+  background-color: #fafafa;
+  border-radius: 9px;
+  text-align: center;
+  cursor: pointer;
+}
+.item-friends > * {
+  margin-bottom: 30px;
+}
+
+.item-friends__button {
+  border: 2px solid #f1cdb3;
+  transition: 0.3s;
+}
+.item-friends__button:hover {
+  border: 2px solid #fddcc4;
+  background-color: #fddcc4;
+}
+
+.main-friends__slider-arrows {
+  width: 100%;
+  position: absolute;
+  top: calc(50% + 15px);
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-friends__navigatio_next {
+  transform: rotate(180deg);
+}
+
+.main-friends__button {
+  background-color: #f1cdb3;
+  transition: 0.3s;
+}
+.main-friends__button:hover {
+  background-color: #fddcc4;
 }/*# sourceMappingURL=styles.css.map */

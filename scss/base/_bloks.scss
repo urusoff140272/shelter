@@ -1,0 +1,51 @@
+h2 {
+    font-size: 35px;
+    line-height: 1.3;
+    letter-spacing: 0.06em;
+    color: $color-dark-l;
+    max-width: 370px;
+}
+
+h3 {
+    font-size: 20px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: $color-dark-l;
+}
+
+.button {
+    font-size: 17px;
+    line-height: 1.3;
+    letter-spacing: 0.06em;
+    color: $color-dark-3xl;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    min-height: 52px;
+    padding: 5px 45px;
+}
+
+.main-friends__navigation {
+    position: static;
+    &::after {
+        display: none;
+    }
+    width: 52px;
+    height: 52px;
+    background-image: url(../../img/friends/arrows/arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 100px;
+    border: 2px solid $color-primary;
+    transition: 0.3s;
+    &:hover{
+        background-color: $color-primary-light;
+        border: 2px solid $color-primary-light;
+    }
+}
+
+
+
+
+

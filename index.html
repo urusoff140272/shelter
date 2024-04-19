@@ -1,26 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shelter</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
     <div class="wrapper">
         <header class="header">
+            <div class="container">
+                <div class="header__body">
+                    <a href="#" class="header__logo">
+                        <p class="header__logo-title">Cozy House</p>
+                        <p class="header__logo-subtitle">Shelter for pets in Boston</p>
+                    </a>
+                    <nav class="header__menu menu-header">
+                        <ul class="menu-header__list">
+                            <li class="menu-header__item menu-header__item_accent">
+                                <a href="#" class="menu-header__link">
+                                    About the shelter
+                                </a>
+                            </li>
 
+                            <li class="menu-header__item">
+                                <a href="#" class="menu-header__link">
+                                    Our pets
+                                </a>
+                            </li>
+
+                            <li class="menu-header__item">
+                                <a href="#" class="menu-header__link">
+                                    Help the shelter
+                                </a>
+                            </li>
+
+                            <li class="menu-header__item">
+                                <a href="#" class="menu-header__link">
+                                    Contacts
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </header>
 
         <main class="main">
+            <section class="main__only only-main">
+                <div class="container">
+                    <div class="only-main__body">
+                        <div class="only-main__content">
+                            <h1 class="only-main__title">Not only people need a house</h1>
+                            <p class="only-main__text">We offer to give a chance to a little and nice puppy with an
+                                extremely wide and open heart. He or she will love you more than anybody else in the
+                                world,
+                                you will see!</p>
 
+                            <a href="#" class="only-main__button button">Make a friend</a>
+                        </div>
+                        <div class="only-main__image">
+                            <img src="./img/only/puppy.png" alt="puppy">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="main__about about-main">
+                <div class="container">
+                    <div class="about-main__body">
+                        <div class="about-main__image">
+                            <img src="./img/about/pets.jpg" alt="pets">
+                        </div>
+
+                        <div class="about-main__content">
+                            <h2 class="about-main__title">About the shelter “Cozy House”</h2>
+
+                            <p class="about-main__text">Currently we have 121 dogs and 342 cats on our hands and
+                                statistics
+                                show that only 20% of them will find a family. The others will continue to live with us
+                                and
+                                will be waiting for a lucky chance to become dearly loved.</p>
+
+                            <p class="about-main__text">We feed our wards with the best food and make sure that they do
+                                not
+                                get sick, feel comfortable (including psychologically) and well. We are supported by 87
+                                volunteers and 28 employees of various skill levels. About 12% of the animals are taken
+                                by
+                                the shelter staff. Taking care of the animals, they become attached to the pets and
+                                would
+                                hardly ever leave them alone.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="main__friends main-friends">
+                <div class="container">
+                    <div class="main-friends__body">
+                        <h2 class="main-friends__title">
+                            Our friends who <br>are looking for a house
+                        </h2>
+
+                        <!-- Slider main container -->
+                        <div class="main-friends__slider swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide main-friends__slide">
+                                    <div class="main-friends__item item-friends">
+                                        <div class="item-friends__image">
+                                            <img src="./img/friends/01.jpg" alt="pets">
+                                        </div>
+                                        <h3 class="item-friends__title">Katrine</h3>
+                                        <a href="#" class="item-friends__button button">Learn more</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide main-friends__slide">
+                                    <div class="main-friends__item item-friends">
+                                        <div class="item-friends__image">
+                                            <img src="./img/friends/02.jpg" alt="pets">
+                                        </div>
+                                        <h3 class="item-friends__title">Jennifer</h3>
+                                        <a href="#" class="item-friends__button button">Learn more</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide main-friends__slide">
+                                    <div class="main-friends__item item-friends">
+                                        <div class="item-friends__image">
+                                            <img src="./img/friends/03.jpg" alt="pets">
+                                        </div>
+                                        <h3 class="item-friends__title">Woody</h3>
+                                        <a href="#" class="item-friends__button button">Learn more</a>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide main-friends__slide">
+                                    <div class="main-friends__item item-friends">
+                                        <div class="item-friends__image">
+                                            <img src="./img/friends/01.jpg" alt="pets">
+                                        </div>
+                                        <h3 class="item-friends__title">Katrine</h3>
+                                        <a href="#" class="item-friends__button button">Learn more</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide main-friends__slide">
+                                    <div class="main-friends__item item-friends">
+                                        <div class="item-friends__image">
+                                            <img src="./img/friends/02.jpg" alt="pets">
+                                        </div>
+                                        <h3 class="item-friends__title">Jennifer</h3>
+                                        <a href="#" class="item-friends__button button">Learn more</a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide main-friends__slide">
+                                    <div class="main-friends__item item-friends">
+                                        <div class="item-friends__image">
+                                            <img src="./img/friends/03.jpg" alt="pets">
+                                        </div>
+                                        <h3 class="item-friends__title">Woody</h3>
+                                        <a href="#" class="item-friends__button button">Learn more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="main-friends__slider-arrows">
+                            <div class="swiper-button-prev main-friends__navigation"></div>
+                            <div class="swiper-button-next main-friends__navigation main-friends__navigatio_next"></div>
+                        </div>
+
+                        <a href="#" class="main-friends__button button">Get to know the rest</a>
+                    </div>
+                </div>
+            </section>
         </main>
 
         <footer class="footer">
-            
+            footer
         </footer>
     </div>
-    
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
+
 </html>

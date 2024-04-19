@@ -3,9 +3,10 @@ html {
 }
 
 body{
-    background-color: rgb(127, 127, 193);
-    font-family: "Montserrat", Verdana, sans-serif;
-    color: $color-textMain;
+    background-color: $color-bg;
+    font-family: "Georgia", serif;
+    color: $color-dark-l;
+    font-weight: 400;
 }
 
 .wrapper{
@@ -15,8 +16,8 @@ body{
     flex-direction: column;
 }
 
-._container{
-    max-width: 1046px;
+.container{
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
     box-sizing: content-box;
