@@ -1,21 +1,20 @@
 .main__friends {
     padding: 80px 0 100px;
 }
-.main-friends {
+.friends-main {
     background-color: $color-light-l;
 }
 
-.main-friends__body {
+.friends-main__body {
     position: relative;
     text-align: center;
 }
-.main-friends__title {
+.friends-main__title {
     max-width: 400px;
     margin: 0 auto 60px;
-    text-align: center;
 }
 
-.main-friends__slider {
+.friends-main__slider {
     max-width: 990px;
     margin-bottom: 60px;
 }
@@ -38,18 +37,18 @@
         background-color: $color-primary-light;
     }
 }
-.main-friends__slider-arrows {
+.friends-main__slider-arrows {
     width: 100%;
     position: absolute;
     top: calc(50% + 15px);
     display: flex;
     justify-content: space-between;
 }
-.main-friends__navigatio_next {
+.friends-main__navigatio_next {
     transform: rotate(180deg);
 }
 
-.main-friends__button {
+.friends-main__button {
     background-color: $color-primary;
     transition: 0.3s;
     &:hover {

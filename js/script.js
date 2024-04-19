@@ -1,4 +1,4 @@
-const swiper = new Swiper('.main-friends__slider', {
+const swiper = new Swiper('.friends-main__slider', {
 
     loop: true,
     speed: 800,

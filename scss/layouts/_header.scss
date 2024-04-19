@@ -26,6 +26,7 @@
 .header__logo-subtitle {
     font-family: "Arial";
     font-size: 13px;
+    line-height: 1.15;
     letter-spacing: 0.1em;
     color: $color-light-xl;
 }
@@ -57,6 +58,9 @@
 .menu-header__item_accent {
     ::after {
         width: 100%;
+    }
+    a{
+        pointer-events: none;
     }
 }
 
