@@ -55,3 +55,33 @@
         background-color: $color-primary-light;
     }
 }
+
+@media (max-width: 1180px) {
+    .friends-main__slider {
+        max-width: 580px;
+    }
+}
+
+@media (max-width: 767px) {
+    .friends-main__slider {
+        max-width: 270px;
+    }
+}
+
+@media (max-width: 500px) {
+    .main__friends {
+        padding: 42px 0;
+    }
+    .friends-main__title {
+        font-size: 25px;
+        margin-bottom: 42px;
+    }
+    .friends-main__slider {
+        margin-bottom: 42px;
+    }
+    .friends-main__slider-arrows {
+        position: static;
+        margin: 0 auto 42px;
+        width: 61%;
+    }
+}

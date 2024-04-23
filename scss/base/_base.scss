@@ -3,7 +3,6 @@ html {
 }
 
 body{
-    background-color: $color-bg;
     font-family: "Georgia", serif;
     color: $color-dark-l;
     font-weight: 400;
@@ -19,7 +18,7 @@ body{
 .container{
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 40px;
     box-sizing: content-box;
 }
 
@@ -27,7 +26,7 @@ body{
     flex: 1 1 auto;
 }
 
-._ibg{
+.ibg{
     position: relative;
     img{
         position: absolute;
@@ -36,5 +35,17 @@ body{
         top: 0;
         left: 0;
         object-fit: cover;
+    }
+}
+
+@media (max-width: 1280px) {
+    .container{
+        padding: 0 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .container{
+        padding: 0 10px;
     }
 }

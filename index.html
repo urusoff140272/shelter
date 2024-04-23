@@ -18,6 +18,7 @@
                         <p class="header__logo-title">Cozy House</p>
                         <p class="header__logo-subtitle">Shelter for pets in Boston</p>
                     </a>
+
                     <nav class="header__menu menu-header">
                         <ul class="menu-header__list">
                             <li class="menu-header__item menu-header__item_accent">
@@ -27,7 +28,7 @@
                             </li>
 
                             <li class="menu-header__item">
-                                <a href="#" class="menu-header__link">
+                                <a href="#friends" class="menu-header__link">
                                     Our pets
                                 </a>
                             </li>
@@ -45,6 +46,10 @@
                             </li>
                         </ul>
                     </nav>
+
+                    <div class="header__burger">
+                        <span class="header__burger-line"></span>
+                    </div>
                 </div>
             </div>
         </header>
@@ -54,16 +59,22 @@
                 <div class="container">
                     <div class="only-main__body">
                         <div class="only-main__content">
-                            <h1 class="only-main__title">Not only people need a house</h1>
-                            <p class="only-main__text">We offer to give a chance to a little and nice puppy with an
-                                extremely wide and open heart. He or she will love you more than anybody else in the
-                                world,
-                                you will see!</p>
-
-                            <a href="#friends" class="only-main__button button">Make a friend</a>
+                            <div class="only-main__content-container">
+                                <h1 class="only-main__title">Not only people need a house</h1>
+                                <p class="only-main__text">We offer to give a chance to a little and nice puppy with an
+                                    extremely wide and open heart. He or she will love you more than anybody else in the
+                                    world,
+                                    you will see!</p>
+                                <div class="only-main__button-container">
+                                    <a href="#friends" class="only-main__button button">Make a friend</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="only-main__image">
-                            <img src="./img/only/puppy.png" alt="puppy">
+
+                        <div class="only-main__image-container">
+                            <div class="only-main__image ibg">
+                                <img src="./img/only/puppy.png" alt="puppy">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -72,10 +83,6 @@
             <section class="main__about about-main">
                 <div class="container">
                     <div class="about-main__body">
-                        <div class="about-main__image">
-                            <img src="./img/about/pets.jpg" alt="pets">
-                        </div>
-
                         <div class="about-main__content">
                             <h2 class="about-main__title">About the shelter “Cozy House”</h2>
 
@@ -94,6 +101,31 @@
                                 would
                                 hardly ever leave them alone.</p>
                         </div>
+
+                        <div class="about-main__image-container">
+                            <div class="about-main__image ibg">
+                                <img src="./img/about/pets.jpg" alt="pets">
+                            </div>
+                        </div>
+
+                        <!-- <div class="about-main__content">
+                            <h2 class="about-main__title">About the shelter “Cozy House”</h2>
+
+                            <p class="about-main__text">Currently we have 121 dogs and 342 cats on our hands and
+                                statistics
+                                show that only 20% of them will find a family. The others will continue to live with us
+                                and
+                                will be waiting for a lucky chance to become dearly loved.</p>
+
+                            <p class="about-main__text">We feed our wards with the best food and make sure that they do
+                                not
+                                get sick, feel comfortable (including psychologically) and well. We are supported by 87
+                                volunteers and 28 employees of various skill levels. About 12% of the animals are taken
+                                by
+                                the shelter staff. Taking care of the animals, they become attached to the pets and
+                                would
+                                hardly ever leave them alone.</p>
+                        </div> -->
                     </div>
                 </div>
             </section>
@@ -105,11 +137,8 @@
                             Our friends who <br>are looking for a house
                         </h2>
 
-                        <!-- Slider main container -->
                         <div class="friends-main__slider swiper">
-                            <!-- Additional required wrapper -->
                             <div class="swiper-wrapper">
-                                <!-- Slides -->
                                 <div class="swiper-slide friends-main__slide">
                                     <div class="friends-main__item item-friends">
                                         <div class="item-friends__image">
@@ -137,31 +166,30 @@
                                         <a href="#" class="item-friends__button button">Learn more</a>
                                     </div>
                                 </div>
-
                                 <div class="swiper-slide friends-main__slide">
                                     <div class="friends-main__item item-friends">
                                         <div class="item-friends__image">
-                                            <img src="./img/friends/01.jpg" alt="pets">
+                                            <img src="./img/friends/04.jpg" alt="pets">
                                         </div>
-                                        <h3 class="item-friends__title">Katrine</h3>
+                                        <h3 class="item-friends__title">Timmy</h3>
                                         <a href="#" class="item-friends__button button">Learn more</a>
                                     </div>
                                 </div>
                                 <div class="swiper-slide friends-main__slide">
                                     <div class="friends-main__item item-friends">
                                         <div class="item-friends__image">
-                                            <img src="./img/friends/02.jpg" alt="pets">
+                                            <img src="./img/friends/05.jpg" alt="pets">
                                         </div>
-                                        <h3 class="item-friends__title">Jennifer</h3>
+                                        <h3 class="item-friends__title">Scarlett</h3>
                                         <a href="#" class="item-friends__button button">Learn more</a>
                                     </div>
                                 </div>
                                 <div class="swiper-slide friends-main__slide">
                                     <div class="friends-main__item item-friends">
                                         <div class="item-friends__image">
-                                            <img src="./img/friends/03.jpg" alt="pets">
+                                            <img src="./img/friends/06.jpg" alt="pets">
                                         </div>
-                                        <h3 class="item-friends__title">Woody</h3>
+                                        <h3 class="item-friends__title">Freddie</h3>
                                         <a href="#" class="item-friends__button button">Learn more</a>
                                     </div>
                                 </div>
@@ -263,10 +291,6 @@
             <section class="main__addition addition-main">
                 <div class="container">
                     <div class="addition-main__body">
-                        <div class="addition-main__image">
-                            <img src="./img/addition/dog.png" alt="dog">
-                        </div>
-
                         <div class="addition-main__content contennt-addition-main">
                             <h2 class="contennt-addition-main__title">You can also make a donation</h2>
 
@@ -279,6 +303,12 @@
                                 a ipsum at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et
                                 vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus.
                             </p>
+                        </div>
+
+                        <div class="addition-main__image-container">
+                            <div class="addition-main__image ibg">
+                                <img src="./img/addition/dog.png" alt="dog">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -304,22 +334,23 @@
 
                     <div class="footer__column column-footer column-footer_two">
                         <h2 class="column-footer__title">We are waiting for your visit</h2>
-    
-                        <a href="https://goo.gl/maps/8VKsFVYxV9rGw1zY8" target="_blank" rel="noreferrer noopener nofollow"
-                            class="column-footer__link">
+
+                        <a href="https://goo.gl/maps/8VKsFVYxV9rGw1zY8" target="_blank"
+                            rel="noreferrer noopener nofollow" class="column-footer__link column-footer__link-two">
                             <img src="./img/footer/pin.svg" alt="map">
                             1 Central Street, Boston (entrance from the store)
                         </a>
-    
-                        <a href="https://goo.gl/maps/8VKsFVYxV9rGw1zY8" target="_blank" rel="noreferrer noopener nofollow"
-                            class="column-footer__link">
+
+                        <a href="https://goo.gl/maps/8VKsFVYxV9rGw1zY8" target="_blank"
+                            rel="noreferrer noopener nofollow" class="column-footer__link column-footer__link-two">
                             <img src="./img/footer/pin.svg" alt="map">
                             18 South Park, London
                         </a>
                     </div>
-
-                    <div class="footer__image">
-                        <img src="./img/footer/puppy.png" alt="puppy">
+                    <div class="footer__image-container">
+                        <div class="footer__image ibg">
+                            <img src="./img/footer/puppy.png" alt="puppy">
+                        </div>
                     </div>
                 </div>
             </div>
