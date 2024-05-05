@@ -1,0 +1,113 @@
+.main__friends {
+    padding: 80px 0 100px;
+}
+.friends-main {
+    background-color: $color-light-l;
+}
+
+.friends-main__body {
+    position: relative;
+    text-align: center;
+}
+.friends-main__title {
+    max-width: 400px;
+    margin: 0 auto 60px;
+}
+
+.friends-main__slider {
+    max-width: 990px;
+    margin-bottom: 60px;
+}
+
+.item-friends {
+    background-color: $color-light-s;
+    border-radius: 9px;
+    text-align: center;
+    > * {
+        margin-bottom: 30px;
+    }
+    cursor: pointer;
+}
+
+.item-friends__button {
+    border: 2px solid $color-primary;
+    transition: 0.3s;
+    @media (hover: hover) {
+        &:hover {
+            border: 2px solid $color-primary-light;
+            background-color: $color-primary-light;
+        }
+    }
+
+    @media (hover: none) {
+        :active {
+            &:hover {
+                border: 2px solid $color-primary-light;
+                background-color: $color-primary-light;
+            }
+        }
+    }
+}
+.swiper-button-next,
+.swiper-button-prev {
+    z-index: 0;
+}
+
+.friends-main__slider-arrows {
+    width: 100%;
+    position: absolute;
+    top: calc(50% + 15px);
+    display: flex;
+    justify-content: space-between;
+}
+.friends-main__navigatio_next {
+    transform: rotate(180deg);
+}
+
+.friends-main__button {
+    background-color: $color-primary;
+    transition: 0.3s;
+    @media (hover: hover) {
+        &:hover {
+            background-color: $color-primary-light;
+        }
+    }
+
+    @media (hover: none) {
+        :active {
+            &:hover {
+                background-color: $color-primary-light;
+            }
+        }
+    }
+}
+
+@media (max-width: 1180px) {
+    .friends-main__slider {
+        max-width: 580px;
+    }
+}
+
+@media (max-width: 767px) {
+    .friends-main__slider {
+        max-width: 270px;
+    }
+}
+
+@media (max-width: 500px) {
+    .main__friends {
+        padding: 42px 0;
+    }
+    .friends-main__title {
+        font-size: 25px;
+        margin-bottom: 42px;
+    }
+    .friends-main__slider {
+        margin-bottom: 42px;
+    }
+    .friends-main__slider-arrows {
+        position: static;
+        margin: 0 auto 42px;
+        width: 61%;
+    }
+}

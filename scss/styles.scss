@@ -1,0 +1,87 @@
+@font-face {
+	font-family: "Georgia";
+	src: url("../fonts/Georgia.eot");
+	src:
+		local("../fonts/Georgia"),
+		url("../fonts/Georgia.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/Georgia.woff") format("woff"),
+		url("../fonts/Georgia.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Georgia";
+	src: url("../fonts/Georgia-Italic.eot");
+	src:
+		local("../fonts/Georgia Italic"),
+		local("Georgia-Italic"),
+		url("../fonts/Georgia-Italic.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/Georgia-Italic.woff") format("woff"),
+		url("../fonts/Georgia-Italic.ttf") format("truetype");
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Georgia";
+	src: url("../fonts/Georgia-Bold.eot");
+	src:
+		local("../fonts/Georgia Bold"),
+		local("Georgia-Bold"),
+		url("../fonts/Georgia-Bold.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/Georgia-Bold.woff") format("woff"),
+		url("../fonts/Georgia-Bold.ttf") format("truetype");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Georgia";
+	src: url("../fonts/Georgia-BoldItalic.eot");
+	src:
+		local("../fonts/Georgia Bold Italic"),
+		local("Georgia-BoldItalic"),
+		url("../fonts/Georgia-BoldItalic.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/Georgia-BoldItalic.woff") format("woff"),
+		url("../fonts/Georgia-BoldItalic.ttf") format("truetype");
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Arial";
+	src: url("../fonts/ArialRegular/ArialRegular.eot");
+	src:
+		url("../fonts/ArialRegular/ArialRegular.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/ArialRegular/ArialRegular.woff") format("woff"),
+		url("../fonts/ArialRegular/ArialRegular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Arial";
+	src: url("../fonts/ArialItalic/ArialItalic.eot");
+	src:
+		url("../fonts/ArialItalic/ArialItalic.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/ArialItalic/ArialItalic.woff") format("woff"),
+		url("../fonts/ArialItalic/ArialItalic.ttf") format("truetype");
+	font-weight: normal;
+	font-style: italic;
+}
+
+@import "./base/normalize";
+@import "./base/constants";
+
+@import "./base/base";
+@import "./base/bloks";
+
+@import "./layouts/header";
+@import "./layouts/only";
+@import "./layouts/about";
+@import "./layouts/friends";
+@import "./layouts/help";
+@import "./layouts/addition";
+@import "./layouts/footer";
+@import "./layouts/popup";
