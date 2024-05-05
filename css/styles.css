@@ -221,9 +221,17 @@ h3 {
 .friends-main__navigation::after {
   display: none;
 }
-.friends-main__navigation:hover {
-  background-color: #fddcc4;
-  border: 2px solid #fddcc4;
+@media (hover: hover) {
+  .friends-main__navigation:hover {
+    background-color: #fddcc4;
+    border: 2px solid #fddcc4;
+  }
+}
+@media (hover: none) {
+  .friends-main__navigation:active {
+    background-color: #fddcc4;
+    border: 2px solid #fddcc4;
+  }
 }
 
 .header {
@@ -281,8 +289,15 @@ h3 {
   background-color: #f1cdb3;
   transition: 0.3s;
 }
-.menu-header__item :hover::after {
-  width: 100%;
+@media (hover: hover) {
+  .menu-header__item :hover::after {
+    width: 100%;
+  }
+}
+@media (hover: none) {
+  .menu-header__item :active::after {
+    width: 100%;
+  }
 }
 
 .menu-header__item_accent ::after {
@@ -402,8 +417,15 @@ h3 {
   background-color: #f1cdb3;
   transition: 0.3s;
 }
-.only-main__button:hover {
-  background-color: #fddcc4;
+@media (hover: hover) {
+  .only-main__button:hover {
+    background-color: #fddcc4;
+  }
+}
+@media (hover: none) {
+  .only-main__button :active:hover {
+    background-color: #fddcc4;
+  }
 }
 
 .only-main__image-container {
@@ -577,12 +599,21 @@ h3 {
   border: 2px solid #f1cdb3;
   transition: 0.3s;
 }
-.item-friends__button:hover {
-  border: 2px solid #fddcc4;
-  background-color: #fddcc4;
+@media (hover: hover) {
+  .item-friends__button:hover {
+    border: 2px solid #fddcc4;
+    background-color: #fddcc4;
+  }
+}
+@media (hover: none) {
+  .item-friends__button :active:hover {
+    border: 2px solid #fddcc4;
+    background-color: #fddcc4;
+  }
 }
 
-.swiper-button-next, .swiper-button-prev {
+.swiper-button-next,
+.swiper-button-prev {
   z-index: 0;
 }
 
@@ -602,8 +633,15 @@ h3 {
   background-color: #f1cdb3;
   transition: 0.3s;
 }
-.friends-main__button:hover {
-  background-color: #fddcc4;
+@media (hover: hover) {
+  .friends-main__button:hover {
+    background-color: #fddcc4;
+  }
+}
+@media (hover: none) {
+  .friends-main__button :active:hover {
+    background-color: #fddcc4;
+  }
 }
 
 @media (max-width: 1180px) {

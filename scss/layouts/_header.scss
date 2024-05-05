@@ -49,9 +49,20 @@
         background-color: $color-primary;
         transition: 0.3s;
     }
-    :hover {
-        &::after {
-            width: 100%;
+
+    @media (hover: hover) {
+        :hover {
+            &::after {
+                width: 100%;
+            }
+        }
+    }
+
+    @media (hover: none) {
+        :active {
+            &::after {
+                width: 100%;
+            }
         }
     }
 }

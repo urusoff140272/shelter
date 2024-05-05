@@ -33,8 +33,18 @@
 .only-main__button {
     background-color: $color-primary;
     transition: 0.3s;
-    &:hover {
-        background-color: $color-primary-light;
+    @media (hover: hover) {
+        &:hover {
+            background-color: $color-primary-light;
+        }
+    }
+
+    @media (hover: none) {
+        :active {
+            &:hover {
+                background-color: $color-primary-light;
+            }
+        }
     }
 }
 .only-main__image-container {
