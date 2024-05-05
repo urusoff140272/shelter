@@ -211,7 +211,7 @@ h3 {
   position: static;
   width: 52px;
   height: 52px;
-  background-image: url(../../img/friends/arrows/arrow.svg);
+  background-image: url(../img/friends/arrows/arrow.svg);
   background-repeat: no-repeat;
   background-position: center center;
   border-radius: 100px;
@@ -382,7 +382,7 @@ h3 {
 }
 
 .only-main {
-  background-image: url(../../img/only/bg.jpg);
+  background-image: url(../img/only/bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -802,7 +802,7 @@ h3 {
   content: "";
   position: absolute;
   left: 15px;
-  background-image: url(../../img/addition/ico.svg);
+  background-image: url(../img/addition/ico.svg);
   background-repeat: no-repeat;
   width: 30px;
   height: 23px;
@@ -870,7 +870,7 @@ h3 {
 }
 .footer {
   padding-top: 40px;
-  background-image: url(../../img/footer/background.jpg);
+  background-image: url(../img/footer/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
