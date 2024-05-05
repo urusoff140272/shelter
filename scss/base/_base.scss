@@ -6,6 +6,9 @@ body{
     font-family: "Georgia", serif;
     color: $color-dark-l;
     font-weight: 400;
+    &._lock{
+        overflow: hidden;
+    }
 }
 
 .wrapper{

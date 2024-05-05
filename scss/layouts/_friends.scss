@@ -37,6 +37,10 @@
         background-color: $color-primary-light;
     }
 }
+.swiper-button-next, .swiper-button-prev{
+    z-index: 0;
+}
+
 .friends-main__slider-arrows {
     width: 100%;
     position: absolute;
